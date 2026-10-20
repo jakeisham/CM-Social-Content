@@ -1,5 +1,6 @@
 // Graphic components. Each takes a props object from carousel.json and returns HTML
 // rendered inside the dark panel under the slide copy. Styles live next to each component.
+import { tactile } from "./tactile.mjs";
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -451,4 +452,5 @@ export const graphics = {
   "anon-testimonials": anonTestimonials,
   "headline-compare": headlineCompare,
   "score-gauge": scoreGauge,
+  ...tactile,
 };

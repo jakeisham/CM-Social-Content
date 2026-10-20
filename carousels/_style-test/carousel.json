@@ -1,0 +1,265 @@
+{
+  "title": "Style test \u2014 three tactile directions",
+  "slides": [
+    {
+      "text": "The brand red flags I spot in 10 seconds.\n\nSo do your clients.",
+      "graphic": {
+        "type": "markup-profile",
+        "props": {
+          "username": "northside.co",
+          "initial": "N",
+          "name": "Northside Co.",
+          "category": "Marketing Agency",
+          "bio": [
+            "Helping businesses grow \ud83d\ude80"
+          ],
+          "link": "linktr.ee/northsideco",
+          "posts": "48",
+          "followers": "1,204",
+          "following": "1,876",
+          "tiles": [
+            {
+              "bg": "#f2c94c",
+              "color": "#1a1a1a",
+              "text": "SALE 20% OFF"
+            },
+            {
+              "bg": "#e84b3c",
+              "text": "Happy 4th of July!",
+              "font": "Serif"
+            },
+            {
+              "bg": "#2d2d2d",
+              "text": "Coming soon...",
+              "font": "Typewriter"
+            }
+          ],
+          "marks": [
+            {
+              "x": 92,
+              "y": 150,
+              "rx": 80,
+              "ry": 76,
+              "n": "?"
+            },
+            {
+              "x": 165,
+              "y": 312,
+              "rx": 150,
+              "ry": 24,
+              "n": "?",
+              "nx": 318,
+              "ny": 262
+            },
+            {
+              "x": 380,
+              "y": 560,
+              "rx": 118,
+              "ry": 108,
+              "n": "?",
+              "nx": 492,
+              "ny": 440
+            }
+          ],
+          "notes": [
+            {
+              "text": "10 seconds.",
+              "x": 560,
+              "y": -34,
+              "rotate": 5,
+              "size": 44
+            }
+          ],
+          "height": 640
+        }
+      }
+    },
+    {
+      "text": "**4. The founder has 200 followers and no posts.**",
+      "graphic": {
+        "type": "markup-profile",
+        "props": {
+          "username": "mike.northside",
+          "initial": "M",
+          "name": "Mike",
+          "bio": [],
+          "link": "",
+          "posts": "0",
+          "followers": "200",
+          "following": "1,893",
+          "empty": true,
+          "rotate": 1.2,
+          "marks": [
+            {
+              "x": 405,
+              "y": 148,
+              "rx": 150,
+              "ry": 52
+            }
+          ],
+          "arrows": [
+            {
+              "x1": 640,
+              "y1": 430,
+              "x2": 545,
+              "y2": 205,
+              "bend": 0.25
+            }
+          ],
+          "notes": [
+            {
+              "text": "who is this guy?",
+              "x": 520,
+              "y": 450,
+              "rotate": -5,
+              "size": 42
+            }
+          ],
+          "height": 600
+        }
+      }
+    },
+    {
+      "text": "The brand red flags I spot in 10 seconds.\n\nSo do your clients.",
+      "graphic": {
+        "type": "case-file",
+        "props": {
+          "fileNo": "0427",
+          "time": "00:10",
+          "stamp": "7 FLAGS",
+          "findings": [
+            "Logo changes on every platform",
+            "Last post was months ago",
+            "Team page is stock photos",
+            "Founder: 200 followers, 0 posts",
+            "Muffled audio in every video",
+            "Testimonials with no names",
+            "Nobody can tell who they serve"
+          ]
+        }
+      }
+    },
+    {
+      "text": "**4. The founder has 200 followers and no posts.**",
+      "graphic": {
+        "type": "case-file",
+        "props": {
+          "fileNo": "0427",
+          "time": "00:10",
+          "subject": "",
+          "reveal": [
+            0,
+            1,
+            2
+          ],
+          "highlight": 3,
+          "rotate": -0.8,
+          "findings": [
+            "Logo changes on every platform",
+            "Last post was months ago",
+            "Team page is stock photos",
+            "Founder: 200 followers, 0 posts",
+            "Muffled audio in every video",
+            "Testimonials with no names",
+            "Nobody can tell who they serve"
+          ]
+        }
+      }
+    },
+    {
+      "text": "The brand red flags I spot in 10 seconds.\n\nSo do your clients.",
+      "graphic": {
+        "type": "receipt",
+        "props": {
+          "store": "FIRST IMPRESSION",
+          "meta": [
+            "Customer browsing time: 0:10",
+            "Items checked: 7"
+          ],
+          "blur": true,
+          "torn": true,
+          "lines": [
+            {
+              "item": "Logo x3 versions",
+              "price": "-12"
+            },
+            {
+              "item": "Last post: 4 mo",
+              "price": "-18"
+            },
+            {
+              "item": "Stock team photos",
+              "price": "-15"
+            },
+            {
+              "item": "Ghost founder",
+              "price": "-20"
+            },
+            {
+              "item": "Bad audio",
+              "price": "-10"
+            },
+            {
+              "item": "Nameless reviews",
+              "price": "-14"
+            },
+            {
+              "item": "No niche",
+              "price": "-11"
+            }
+          ],
+          "total": "CUSTOMER",
+          "totalValue": "LEFT"
+        }
+      }
+    },
+    {
+      "text": "**4. The founder has 200 followers and no posts.**",
+      "graphic": {
+        "type": "receipt",
+        "props": {
+          "store": "FIRST IMPRESSION",
+          "meta": [
+            "Customer browsing time: 0:10",
+            "Items checked: 7"
+          ],
+          "blur": true,
+          "highlight": 3,
+          "rotate": 1.5,
+          "lines": [
+            {
+              "item": "Logo x3 versions",
+              "price": "-12"
+            },
+            {
+              "item": "Last post: 4 mo",
+              "price": "-18"
+            },
+            {
+              "item": "Stock team photos",
+              "price": "-15"
+            },
+            {
+              "item": "Founder: 0 posts",
+              "price": "-20 TRUST"
+            },
+            {
+              "item": "Bad audio",
+              "price": "-10"
+            },
+            {
+              "item": "Nameless reviews",
+              "price": "-14"
+            },
+            {
+              "item": "No niche",
+              "price": "-11"
+            }
+          ],
+          "total": "CUSTOMER",
+          "totalValue": "LEFT"
+        }
+      }
+    }
+  ]
+}

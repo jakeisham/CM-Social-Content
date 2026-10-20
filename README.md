@@ -11,6 +11,15 @@ Tweet-style Instagram carousels (1080×1350, 4:5) rendered from a JSON file.
 
 Setup once: `npm install`.
 
+## Creative rules
+
+1. **The hook graphic withholds.** Slide 1 never lists or labels the answers. It teases:
+   redacted lines, blurred items, circles with no explanation, a torn-off total. The reader
+   has to swipe to find out.
+2. **Nothing should look AI-generated.** No neon glows, glassy dark cards, gradient blobs,
+   pill badges or emoji-as-illustration. Graphics should look like real objects a person
+   made or marked up: screenshots with marker, typed paper, receipts, sticky notes.
+
 ## Slide text
 
 - Blank line = new paragraph. `**bold**` for the step title (e.g. `**3. Your website.**`).

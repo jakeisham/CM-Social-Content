@@ -88,3 +88,10 @@ html, body {
 .tag.warn { color: var(--warn); background: rgba(251, 191, 36, 0.12); }
 .muted { color: var(--panel-muted); }
 .icon { width: 40px; height: 40px; flex: none; }
+
+/* ---------- tactile fonts ---------- */
+@font-face { font-family: "Marker"; src: url("../assets/fonts/permanent-marker-latin-400-normal.woff2"); }
+@font-face { font-family: "Hand"; src: url("../assets/fonts/caveat-latin-400-normal.woff2"); font-weight: 400; }
+@font-face { font-family: "Hand"; src: url("../assets/fonts/caveat-latin-700-normal.woff2"); font-weight: 700; }
+@font-face { font-family: "Typewriter"; src: url("../assets/fonts/special-elite-latin-400-normal.woff2"); }
+@font-face { font-family: "Serif"; src: url("../assets/fonts/instrument-serif-latin-400-normal.woff2"); }
