@@ -61,8 +61,8 @@ to fill the space under the copy.
 `pad`, `label`), and `note` (handwritten text placed with `near` + `side` + `dx`/`dy`, or
 absolute `x`/`y`; `arrowTo` draws an arrow to a target).
 
-`src/graphics/index.mjs` and `tactile.mjs` also hold older dark-panel graphics and the
-case-file / receipt directions. They break creative rule 2, so don't use them for new posts.
+`tactile.mjs` keeps the case-file and receipt directions as occasional alternates.
+The dark-panel graphics in `index.mjs` are legacy and break creative rule 2, so don't use them.
 
 ## Brand
 
