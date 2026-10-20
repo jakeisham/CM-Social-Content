@@ -1,0 +1,104 @@
+{
+  "title": "7 things customers check before they buy",
+  "caption": "👀 Before anyone buys from you, they check these 7 things.\n\nBe honest: how many are you failing? Drop your number below 👇\n\nSave this and run the audit on your own business this week.\n\n#branding #smallbusiness #marketing #founder #creativeminds",
+  "slides": [
+    {
+      "text": "Before anyone buys from you, they check 7 things.\n\nMost businesses are failing at least 3. Here's the list 🧵",
+      "graphic": {
+        "type": "scorecard",
+        "props": {
+          "chip": "Brand Trust Audit",
+          "scoreLabel": "Trust score",
+          "items": [
+            { "label": "Branding", "pass": true },
+            { "label": "Website", "pass": false },
+            { "label": "Company social", "pass": true },
+            { "label": "Founder profile", "pass": false },
+            { "label": "Real photos", "pass": true },
+            { "label": "Clear message", "pass": false },
+            { "label": "Proof", "pass": true }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**1. Your logo, fonts, and colors.**\n\nIf they don't match everywhere, you look like three different companies.",
+      "graphic": {
+        "type": "brand-mismatch",
+        "props": {
+          "chip": "Same company?",
+          "company": "Northside Co.",
+          "variants": [
+            { "where": "Website", "font": "'Liberation Serif', serif", "style": "italic", "color": "#e8833a", "bg": "#fff7ee", "swatches": ["#e8833a", "#5b3a1e", "#f4d9b8"] },
+            { "where": "Instagram", "font": "'InterLocal', sans-serif", "weight": 800, "tracking": "-1px", "color": "#ffffff", "bg": "#2a5bd7", "swatches": ["#2a5bd7", "#ffffff", "#ffd43b"] },
+            { "where": "Business card", "font": "'JetBrains Mono', monospace", "weight": 500, "color": "#1f7a4d", "bg": "#e6f2ea", "company": "NORTHSIDE", "swatches": ["#1f7a4d", "#9ad1b0", "#222222"] }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**2. Your website.**\n\nOutdated design reads as an outdated business.",
+      "graphic": {
+        "type": "browser-compare",
+        "props": {
+          "chip": "First impression",
+          "before": { "year": "Built 2014", "label": "Looks closed" },
+          "after": { "year": "Refreshed 2026", "label": "Looks open", "headline": "Built to grow your business." }
+        }
+      }
+    },
+    {
+      "text": "**3. Your company social.**\n\nNo posts in 3 months? They assume you're struggling.",
+      "graphic": {
+        "type": "social-profile",
+        "props": { "chip": "Company Instagram", "username": "northside.co", "lastPost": "Last post: 97 days ago" }
+      }
+    },
+    {
+      "text": "**4. Your founder's profile.**\n\nPeople buy from people. A dead founder account kills trust.",
+      "graphic": {
+        "type": "founder-profile",
+        "props": { "chip": "Founder profile", "lastActive": "Last post: 11 months ago", "trust": 18 }
+      }
+    },
+    {
+      "text": "**5. Real photos.**\n\nStock images tell them you have something to hide.",
+      "graphic": {
+        "type": "stock-vs-real",
+        "props": { "chip": "Your website photos" }
+      }
+    },
+    {
+      "text": "**6. Your message.**\n\nIf they can't say what you do in one sentence, they won't buy.",
+      "graphic": {
+        "type": "message-bubbles",
+        "props": { "chip": "The one-sentence test", "goodReaction": "Got it." }
+      }
+    },
+    {
+      "text": "**7. Proof.**\n\nTestimonials and case studies close the deal before you ever speak.",
+      "graphic": {
+        "type": "testimonial",
+        "props": {
+          "chip": "Social proof",
+          "quote": "We doubled our leads in 60 days. Customers finally get what we do.",
+          "author": "Sarah K.",
+          "role": "Owner, Bloom Studio",
+          "stat": "+212%",
+          "statLabel": "more inbound leads"
+        }
+      }
+    },
+    {
+      "text": "Most businesses fail at least 3 of these.\n\nHow many are you failing? Save this and audit your brand this week.",
+      "graphic": {
+        "type": "checklist",
+        "props": {
+          "chip": "Your audit",
+          "items": ["Branding", "Website", "Company social", "Founder profile", "Real photos", "Clear message", "Proof"],
+          "footer": "Your score: ___ / 7"
+        }
+      }
+    }
+  ]
+}
