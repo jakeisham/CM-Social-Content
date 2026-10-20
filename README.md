@@ -25,29 +25,44 @@ Setup once: `npm install`.
 - Blank line = new paragraph. `**bold**` for the step title (e.g. `**3. Your website.**`).
 - Keep step slides to a bold title plus 1–2 short sentences; the renderer warns if a slide overflows.
 
-## Graphics
+## Graphics — marked-up screenshots (house style)
 
-Every slide picks a component from `src/graphics/index.mjs` and passes `props`:
+Every slide uses `"type": "shot"`: a light-mode screenshot mock-up that gets red-marker
+annotations drawn on it (`src/graphics/screens.mjs` + `src/ink.js`). Screenshots auto-scale
+to fill the space under the copy.
 
-| type | use for |
+```json
+{ "type": "shot", "props": {
+    "kind": "ig", "rotate": -1.5, "username": "northside.co", "followers": "1,204",
+    "ink": [
+      { "type": "circle", "target": "followers", "label": "?" },
+      { "type": "note", "text": "who is this?", "near": "followers", "side": "right", "arrowTo": "followers" }
+    ] } }
+```
+
+**Kinds** (and the parts you can target):
+
+| kind | targets |
 |---|---|
-| `scorecard` | hook: pass/fail checklist with a big score |
-| `brand-mismatch` | the same brand shown inconsistently |
-| `browser-compare` | old site vs new site |
-| `social-profile` | inactive Instagram profile (`empty: true` for a "No posts yet" account) |
-| `founder-profile` | dead founder account + trust meter |
-| `stock-vs-real` | stock photo vs real photo |
-| `message-bubbles` | jargon answer vs clear answer |
-| `testimonial` | review card + case-study stat |
-| `checklist` | CTA: empty boxes for the reader to score themselves |
-| `flag-scan` | hook: stopwatch + list of red flags |
-| `team-page` | "Meet the team" page with stock photos / empty slots |
-| `audio-compare` | phone video + good audio vs pro video + bad audio |
-| `anon-testimonials` | nameless reviews vs one real, attributed review |
-| `headline-compare` | vague homepage headline vs a specific one |
-| `score-gauge` | closer: brand-score gauge with a quiz button |
+| `ig` | avatar, posts, followers, following, name, category, bio-N, link, tile-N, empty |
+| `old-site` | title, marquee, links, image, counter, copyright |
+| `hero` | eyebrow, headline, sub, button |
+| `team` | heading, member-N |
+| `about` | photo, filename, heading, body |
+| `testimonials` | t-N, quote-N, who-N, result-N |
+| `linkedin` | avatar, name, headline, followers, activity |
+| `google` | query, result-N, panel, panel-photo, rating, panel-website, panel-social |
+| `logos` | logo-N |
+| `video` | player, caption, volume, title |
+| `notes` | title, item-N, footer |
+| `quiz` | headline, button |
 
-Add new components to the same file and register them in the `graphics` export.
+**Ink marks:** `circle`, `underline`, `strike`, `check`, `cross` (each takes `target`, optional
+`pad`, `label`), and `note` (handwritten text placed with `near` + `side` + `dx`/`dy`, or
+absolute `x`/`y`; `arrowTo` draws an arrow to a target).
+
+`src/graphics/index.mjs` and `tactile.mjs` also hold older dark-panel graphics and the
+case-file / receipt directions. They break creative rule 2, so don't use them for new posts.
 
 ## Brand
 

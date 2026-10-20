@@ -39,6 +39,7 @@ function slideHtml(brand, slide) {
   }
   return `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="${pathToFileURL(path.join(ROOT, "src/styles.css")).href}">
+<script defer src="${pathToFileURL(path.join(ROOT, "src/ink.js")).href}"></script>
 </head><body><div class="slide">
   <div class="header">
     <div class="avatar">${avatarHtml(brand)}</div>
@@ -65,6 +66,9 @@ async function renderCarousel(browser, dir, brand) {
     fs.writeFileSync(htmlFile, slideHtml(brand, slide));
     await page.goto(pathToFileURL(htmlFile).href);
     await page.evaluate(() => document.fonts.ready);
+    await page.waitForFunction(() => window.__inkDone === true);
+    const inkError = await page.evaluate(() => window.__inkError);
+    if (inkError) throw new Error(`slide ${n}: ${inkError}`);
     const overflow = await page.evaluate(() => document.querySelector(".slide").scrollHeight > window.innerHeight);
     if (overflow) console.warn(`  ! slide ${n} content overflows the canvas — trim the copy or graphic`);
     await page.screenshot({ path: path.join(outDir, `slide-${n}.png`) });

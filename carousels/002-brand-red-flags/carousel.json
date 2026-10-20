@@ -5,26 +5,129 @@
     {
       "text": "The brand red flags I spot in 10 seconds.\n\nSo do your clients.",
       "graphic": {
-        "type": "flag-scan",
+        "type": "shot",
         "props": {
-          "chip": "10-second brand scan",
-          "time": "0:10",
-          "timeLabel": "to judge your brand",
-          "flags": ["Mismatched logo", "Stale posts", "Stock team", "Ghost founder", "Bad audio", "Fake reviews", "No niche"]
+          "kind": "ig",
+          "rotate": -1.5,
+          "width": 780,
+          "username": "northside.co",
+          "initial": "N",
+          "name": "Northside Co.",
+          "category": "Marketing Agency",
+          "bio": [
+            "Helping businesses grow"
+          ],
+          "link": "linktr.ee/northsideco",
+          "posts": "48",
+          "followers": "1,204",
+          "following": "1,876",
+          "tiles": [
+            {
+              "bg": "#f2c94c",
+              "color": "#1a1a1a",
+              "text": "SALE 20% OFF"
+            },
+            {
+              "bg": "#e84b3c",
+              "text": "Happy 4th of July!",
+              "font": "Serif"
+            },
+            {
+              "bg": "#2d2d2d",
+              "text": "Coming soon...",
+              "font": "Typewriter"
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "avatar",
+              "pad": 6,
+              "label": "?"
+            },
+            {
+              "type": "circle",
+              "target": "bio-0",
+              "pad": 4,
+              "label": "?"
+            },
+            {
+              "type": "circle",
+              "target": "following",
+              "pad": 6,
+              "label": "?"
+            },
+            {
+              "type": "note",
+              "text": "10 seconds.",
+              "x": 520,
+              "y": -44,
+              "rotate": 5,
+              "size": 46
+            }
+          ]
         }
       }
     },
     {
       "text": "**1. The logo looks different on every platform.**",
       "graphic": {
-        "type": "brand-mismatch",
+        "type": "shot",
         "props": {
-          "chip": "Same company?",
-          "company": "Northside Co.",
-          "variants": [
-            { "where": "Instagram", "font": "'InterLocal', sans-serif", "weight": 800, "tracking": "-1px", "color": "#ffffff", "bg": "#e1306c", "swatches": ["#e1306c", "#ffffff", "#fcaf45"] },
-            { "where": "LinkedIn", "font": "'Liberation Serif', serif", "weight": 700, "color": "#0a3d62", "bg": "#e8eef5", "company": "NORTHSIDE COMPANY", "swatches": ["#0a3d62", "#8fa9c4", "#c0a062"] },
-            { "where": "Website", "font": "'JetBrains Mono', monospace", "weight": 500, "style": "italic", "color": "#f5f5f5", "bg": "#222222", "company": "northside", "swatches": ["#222222", "#f5f5f5", "#39d353"] }
+          "kind": "logos",
+          "rotate": 1,
+          "items": [
+            {
+              "where": "Instagram",
+              "text": "Northside Co.",
+              "font": "'InterLocal', sans-serif",
+              "weight": 800,
+              "tracking": "-1px",
+              "color": "#fff",
+              "bg": "#e1306c",
+              "round": true
+            },
+            {
+              "where": "LinkedIn",
+              "text": "NORTHSIDE COMPANY",
+              "font": "'Liberation Serif', serif",
+              "color": "#0a3d62",
+              "bg": "#e8eef5"
+            },
+            {
+              "where": "Website",
+              "text": "northside",
+              "font": "'JetBrains Mono', monospace",
+              "weight": 500,
+              "style": "italic",
+              "color": "#f5f5f5",
+              "bg": "#222"
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "logo-0",
+              "pad": -16
+            },
+            {
+              "type": "circle",
+              "target": "logo-1",
+              "pad": -16
+            },
+            {
+              "type": "circle",
+              "target": "logo-2",
+              "pad": -16
+            },
+            {
+              "type": "note",
+              "text": "same company??",
+              "x": 420,
+              "y": -58,
+              "rotate": 4,
+              "size": 46
+            }
           ]
         }
       }
@@ -32,22 +135,125 @@
     {
       "text": "**2. The last post was from months ago.**",
       "graphic": {
-        "type": "social-profile",
-        "props": { "chip": "Company Instagram", "username": "northside.co", "lastPost": "Last post: 4 months ago", "linkTag": "Bio: \"Coming soon!\"" }
+        "type": "shot",
+        "props": {
+          "kind": "ig",
+          "rotate": -1.2,
+          "width": 780,
+          "username": "northside.co",
+          "initial": "N",
+          "name": "Northside Co.",
+          "category": "Marketing Agency",
+          "bio": [
+            "New website coming soon!"
+          ],
+          "link": "",
+          "posts": "48",
+          "followers": "1,204",
+          "following": "1,876",
+          "tiles": [
+            {
+              "bg": "#f4ead8",
+              "color": "#7a5c2e",
+              "text": "Happy Holidays from our team!",
+              "font": "Serif"
+            },
+            {
+              "bg": "#e9eef3",
+              "color": "#9aa6b2",
+              "text": ""
+            },
+            {
+              "bg": "#efe9f1",
+              "color": "#9aa6b2",
+              "text": ""
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "tile-0",
+              "pad": -12
+            },
+            {
+              "type": "note",
+              "text": "posted in\nDECEMBER.",
+              "near": "tile-0",
+              "side": "right",
+              "dx": 40,
+              "dy": -10,
+              "rotate": -5,
+              "size": 48,
+              "arrowTo": "tile-0"
+            },
+            {
+              "type": "underline",
+              "target": "bio-0",
+              "pad": 0
+            }
+          ]
+        }
       }
     },
     {
       "text": "**3. The team page is stock photos or nobody at all.**",
       "graphic": {
-        "type": "team-page",
+        "type": "shot",
         "props": {
-          "chip": "About page",
+          "kind": "team",
+          "rotate": 1.2,
           "url": "northside.co/about",
           "members": [
-            { "kind": "stock", "emoji": "👨‍💼", "name": "John Smith", "role": "CEO" },
-            { "kind": "stock", "emoji": "👩‍💼", "name": "Jane Doe", "role": "Marketing" },
-            { "kind": "empty", "name": "Coming soon", "role": "Sales" },
-            { "kind": "empty", "name": "Coming soon", "role": "Support" }
+            {
+              "kind": "stock",
+              "name": "John Smith",
+              "role": "CEO"
+            },
+            {
+              "kind": "stock",
+              "name": "Jane Doe",
+              "role": "Marketing"
+            },
+            {
+              "kind": "empty",
+              "name": "Coming soon",
+              "role": "Sales"
+            },
+            {
+              "kind": "empty",
+              "name": "Coming soon",
+              "role": "Support"
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "member-0",
+              "pad": -4
+            },
+            {
+              "type": "circle",
+              "target": "member-1",
+              "pad": -4
+            },
+            {
+              "type": "cross",
+              "target": "member-2",
+              "pad": -20
+            },
+            {
+              "type": "cross",
+              "target": "member-3",
+              "pad": -20
+            },
+            {
+              "type": "note",
+              "text": "who are these people?",
+              "x": 330,
+              "y": -60,
+              "rotate": 3,
+              "size": 44
+            }
           ]
         }
       }
@@ -55,52 +261,194 @@
     {
       "text": "**4. The founder has 200 followers and no posts.**",
       "graphic": {
-        "type": "social-profile",
-        "props": { "chip": "Founder's account", "username": "mike.northside", "initial": "M", "posts": "0", "followers": "200", "following": "1,893", "lastPost": "Never posted", "linkTag": "", "empty": true }
+        "type": "shot",
+        "props": {
+          "kind": "ig",
+          "rotate": 1.2,
+          "width": 780,
+          "username": "mike.northside",
+          "avatarBlank": true,
+          "name": "Mike",
+          "bio": [],
+          "link": "",
+          "posts": "0",
+          "followers": "200",
+          "following": "1,893",
+          "empty": true,
+          "ink": [
+            {
+              "type": "circle",
+              "target": "posts",
+              "pad": 6
+            },
+            {
+              "type": "circle",
+              "target": "followers",
+              "pad": 6
+            },
+            {
+              "type": "note",
+              "text": "who is this guy?",
+              "near": "empty",
+              "side": "below",
+              "dx": 120,
+              "dy": -86,
+              "rotate": -5,
+              "size": 44,
+              "arrowTo": "followers"
+            }
+          ]
+        }
       }
     },
     {
       "text": "**5. Bad audio in the videos.**\n\nPeople forgive bad video. They don't forgive bad audio.",
       "graphic": {
-        "type": "audio-compare",
-        "props": { "chip": "Video check" }
+        "type": "shot",
+        "props": {
+          "kind": "video",
+          "rotate": -1,
+          "width": 800,
+          "title": "Why choose Northside? | Meet the founder",
+          "channel": "Northside Co. · 41 views",
+          "caption": "[wind noise] ...so what we do is... [inaudible]",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "caption",
+              "pad": 6
+            },
+            {
+              "type": "note",
+              "text": "aaand I'm gone.",
+              "x": 470,
+              "y": -64,
+              "rotate": 4,
+              "size": 46,
+              "arrowTo": "caption"
+            }
+          ]
+        }
       }
     },
     {
       "text": "**6. Testimonials with no names, no faces, no proof.**",
       "graphic": {
-        "type": "anon-testimonials",
+        "type": "shot",
         "props": {
-          "chip": "Testimonials",
-          "bad": [
-            { "quote": "Great service! Highly recommend!!", "author": "— Anonymous" },
-            { "quote": "Amazing team, would use again.", "author": "— J." }
+          "kind": "testimonials",
+          "rotate": 1,
+          "items": [
+            {
+              "quote": "Great service! Highly recommend!!",
+              "name": "Anonymous"
+            },
+            {
+              "quote": "Amazing team, would use again.",
+              "name": "J."
+            },
+            {
+              "quote": "Best company ever.",
+              "name": "Happy Customer"
+            }
           ],
-          "good": {
-            "quote": "Our inquiries doubled in 60 days after the rebrand.",
-            "author": "Sarah Kim",
-            "role": "Owner, Bloom Studio",
-            "result": "+104% inquiries"
-          }
+          "ink": [
+            {
+              "type": "circle",
+              "target": "who-0",
+              "pad": 6,
+              "label": "?"
+            },
+            {
+              "type": "circle",
+              "target": "who-1",
+              "pad": 6,
+              "label": "?"
+            },
+            {
+              "type": "circle",
+              "target": "who-2",
+              "pad": 6,
+              "label": "?"
+            },
+            {
+              "type": "note",
+              "text": "says who??",
+              "x": 560,
+              "y": -58,
+              "rotate": 4,
+              "size": 46
+            }
+          ]
         }
       }
     },
     {
       "text": "**7. You can't tell who they serve.**\n\n\"We help businesses grow\" is not a niche.",
       "graphic": {
-        "type": "headline-compare",
+        "type": "shot",
         "props": {
-          "chip": "Homepage headline",
-          "bad": { "headline": "We help businesses grow.", "reaction": "Which ones?" },
-          "good": { "headline": "Brand + content for independent gyms.", "reaction": "That's me." }
+          "kind": "hero",
+          "rotate": -1,
+          "url": "northside.co",
+          "brand": "Northside",
+          "headline": "We help businesses grow.",
+          "sub": "Full-service marketing solutions for every industry.",
+          "button": "Get started",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "headline",
+              "pad": 8
+            },
+            {
+              "type": "underline",
+              "target": "sub",
+              "pad": 0
+            },
+            {
+              "type": "note",
+              "text": "which ones??",
+              "x": 540,
+              "y": -58,
+              "rotate": 4,
+              "size": 46,
+              "arrowTo": "headline"
+            }
+          ]
         }
       }
     },
     {
       "text": "How many did you count?\n\nTake the quiz and get your brand score.",
       "graphic": {
-        "type": "score-gauge",
-        "props": { "chip": "Brand score", "value": "?", "label": "/ 100", "button": "Take the quiz →", "sub": "Link in bio · 2 minutes" }
+        "type": "shot",
+        "props": {
+          "kind": "quiz",
+          "rotate": 1,
+          "url": "creativeminds.co/score",
+          "headline": "What's your brand score?",
+          "sub": "7 questions · 2 minutes",
+          "button": "Get my score",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "button",
+              "pad": 8
+            },
+            {
+              "type": "note",
+              "text": "link in bio",
+              "near": "button",
+              "side": "right",
+              "dx": 40,
+              "dy": 20,
+              "rotate": -6,
+              "size": 46,
+              "arrowTo": "button"
+            }
+          ]
+        }
       }
     }
   ]

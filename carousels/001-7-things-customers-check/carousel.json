@@ -5,18 +5,61 @@
     {
       "text": "Before anyone buys from you, they check 7 things.\n\nMost businesses are failing at least 3. Here's the list 🧵",
       "graphic": {
-        "type": "scorecard",
+        "type": "shot",
         "props": {
-          "chip": "Brand Trust Audit",
-          "scoreLabel": "Trust score",
-          "items": [
-            { "label": "Branding", "pass": true },
-            { "label": "Website", "pass": false },
-            { "label": "Company social", "pass": true },
-            { "label": "Founder profile", "pass": false },
-            { "label": "Real photos", "pass": true },
-            { "label": "Clear message", "pass": false },
-            { "label": "Proof", "pass": true }
+          "kind": "google",
+          "rotate": -1.2,
+          "width": 900,
+          "query": "northside co austin",
+          "results": [
+            {
+              "site": "northside-co.net",
+              "title": "Northside Co. - Welcome to Our Website!!",
+              "desc": "We are a full service company dedicated to quality and customer satisfaction since 1998..."
+            },
+            {
+              "site": "instagram.com › northside.co",
+              "title": "Northside Co. (@northside.co) • Instagram",
+              "desc": "1,204 followers · 48 posts"
+            }
+          ],
+          "panel": {
+            "name": "Northside Co.",
+            "rating": "3.8",
+            "reviews": "6",
+            "category": "Marketing agency in Austin",
+            "photo": "stock"
+          },
+          "ink": [
+            {
+              "type": "circle",
+              "target": "result-0",
+              "pad": 2,
+              "label": "x",
+              "labelSize": 46
+            },
+            {
+              "type": "circle",
+              "target": "panel-photo",
+              "pad": -6,
+              "label": "x",
+              "labelSize": 46
+            },
+            {
+              "type": "circle",
+              "target": "rating",
+              "pad": 4,
+              "label": "x",
+              "labelSize": 46
+            },
+            {
+              "type": "note",
+              "text": "3 out of 7.",
+              "x": 600,
+              "y": -50,
+              "rotate": 4,
+              "size": 48
+            }
           ]
         }
       }
@@ -24,14 +67,63 @@
     {
       "text": "**1. Your logo, fonts, and colors.**\n\nIf they don't match everywhere, you look like three different companies.",
       "graphic": {
-        "type": "brand-mismatch",
+        "type": "shot",
         "props": {
-          "chip": "Same company?",
-          "company": "Northside Co.",
-          "variants": [
-            { "where": "Website", "font": "'Liberation Serif', serif", "style": "italic", "color": "#e8833a", "bg": "#fff7ee", "swatches": ["#e8833a", "#5b3a1e", "#f4d9b8"] },
-            { "where": "Instagram", "font": "'InterLocal', sans-serif", "weight": 800, "tracking": "-1px", "color": "#ffffff", "bg": "#2a5bd7", "swatches": ["#2a5bd7", "#ffffff", "#ffd43b"] },
-            { "where": "Business card", "font": "'JetBrains Mono', monospace", "weight": 500, "color": "#1f7a4d", "bg": "#e6f2ea", "company": "NORTHSIDE", "swatches": ["#1f7a4d", "#9ad1b0", "#222222"] }
+          "kind": "logos",
+          "rotate": -1,
+          "items": [
+            {
+              "where": "Website",
+              "text": "Northside Co.",
+              "font": "'Serif', serif",
+              "style": "italic",
+              "weight": 400,
+              "color": "#e8833a",
+              "bg": "#fff7ee"
+            },
+            {
+              "where": "Instagram",
+              "text": "Northside Co.",
+              "font": "'InterLocal', sans-serif",
+              "weight": 800,
+              "tracking": "-1px",
+              "color": "#fff",
+              "bg": "#2a5bd7",
+              "round": true
+            },
+            {
+              "where": "Business card",
+              "text": "NORTHSIDE",
+              "font": "'JetBrains Mono', monospace",
+              "weight": 500,
+              "color": "#1f7a4d",
+              "bg": "#e6f2ea"
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "logo-0",
+              "pad": -16
+            },
+            {
+              "type": "circle",
+              "target": "logo-1",
+              "pad": -16
+            },
+            {
+              "type": "circle",
+              "target": "logo-2",
+              "pad": -16
+            },
+            {
+              "type": "note",
+              "text": "3 different companies?",
+              "x": 300,
+              "y": -58,
+              "rotate": 3,
+              "size": 44
+            }
           ]
         }
       }
@@ -39,64 +131,267 @@
     {
       "text": "**2. Your website.**\n\nOutdated design reads as an outdated business.",
       "graphic": {
-        "type": "browser-compare",
+        "type": "shot",
         "props": {
-          "chip": "First impression",
-          "before": { "year": "Built 2014", "label": "Looks closed" },
-          "after": { "year": "Refreshed 2026", "label": "Looks open", "headline": "Built to grow your business." }
+          "kind": "old-site",
+          "rotate": 1.2,
+          "ink": [
+            {
+              "type": "circle",
+              "target": "counter",
+              "pad": 6
+            },
+            {
+              "type": "underline",
+              "target": "copyright",
+              "pad": 0
+            },
+            {
+              "type": "note",
+              "text": "is this place\nstill open?",
+              "x": 560,
+              "y": -70,
+              "rotate": 4,
+              "size": 44
+            }
+          ]
         }
       }
     },
     {
       "text": "**3. Your company social.**\n\nNo posts in 3 months? They assume you're struggling.",
       "graphic": {
-        "type": "social-profile",
-        "props": { "chip": "Company Instagram", "username": "northside.co", "lastPost": "Last post: 97 days ago" }
+        "type": "shot",
+        "props": {
+          "kind": "ig",
+          "rotate": -1.2,
+          "width": 780,
+          "username": "northside.co",
+          "initial": "N",
+          "name": "Northside Co.",
+          "category": "Marketing Agency",
+          "bio": [
+            "Quality service since 1998"
+          ],
+          "link": "",
+          "posts": "48",
+          "followers": "1,204",
+          "following": "312",
+          "tiles": [
+            {
+              "bg": "#e9f0e4",
+              "color": "#4e6b3a",
+              "text": "Happy Summer!",
+              "font": "Serif"
+            },
+            {
+              "bg": "#eceff3",
+              "text": ""
+            },
+            {
+              "bg": "#f1ece6",
+              "text": ""
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "tile-0",
+              "pad": -14
+            },
+            {
+              "type": "note",
+              "text": "97 days ago.",
+              "near": "tile-0",
+              "side": "right",
+              "dx": 40,
+              "dy": 0,
+              "rotate": -5,
+              "size": 50,
+              "arrowTo": "tile-0"
+            }
+          ]
+        }
       }
     },
     {
       "text": "**4. Your founder's profile.**\n\nPeople buy from people. A dead founder account kills trust.",
       "graphic": {
-        "type": "founder-profile",
-        "props": { "chip": "Founder profile", "lastActive": "Last post: 11 months ago", "trust": 18 }
+        "type": "shot",
+        "props": {
+          "kind": "linkedin",
+          "rotate": 1.2,
+          "ink": [
+            {
+              "type": "circle",
+              "target": "activity",
+              "pad": 8
+            },
+            {
+              "type": "circle",
+              "target": "avatar",
+              "pad": 4
+            },
+            {
+              "type": "note",
+              "text": "ghost town.",
+              "near": "activity",
+              "side": "right",
+              "dx": 20,
+              "dy": -50,
+              "rotate": -5,
+              "size": 50,
+              "arrowTo": "activity"
+            }
+          ]
+        }
       }
     },
     {
       "text": "**5. Real photos.**\n\nStock images tell them you have something to hide.",
       "graphic": {
-        "type": "stock-vs-real",
-        "props": { "chip": "Your website photos" }
+        "type": "shot",
+        "props": {
+          "kind": "about",
+          "rotate": -1,
+          "filename": "handshake_business_47.jpg",
+          "heading": "About us",
+          "body": "Our team of dedicated professionals is passionate about delivering results for every client.",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "photo",
+              "pad": -10
+            },
+            {
+              "type": "note",
+              "text": "seen this guy on\n40 other websites.",
+              "x": 420,
+              "y": -74,
+              "rotate": 4,
+              "size": 42
+            }
+          ]
+        }
       }
     },
     {
       "text": "**6. Your message.**\n\nIf they can't say what you do in one sentence, they won't buy.",
       "graphic": {
-        "type": "message-bubbles",
-        "props": { "chip": "The one-sentence test", "goodReaction": "Got it." }
+        "type": "shot",
+        "props": {
+          "kind": "hero",
+          "rotate": 1,
+          "headline": "Empowering scalable, end-to-end growth solutions.",
+          "sub": "Leveraging synergy across verticals to unlock tomorrow's potential, today.",
+          "button": "Learn more",
+          "ink": [
+            {
+              "type": "strike",
+              "target": "headline",
+              "pad": 0
+            },
+            {
+              "type": "underline",
+              "target": "sub",
+              "pad": 0
+            },
+            {
+              "type": "note",
+              "text": "...so what do\nyou actually DO?",
+              "x": 520,
+              "y": -76,
+              "rotate": 4,
+              "size": 42
+            }
+          ]
+        }
       }
     },
     {
       "text": "**7. Proof.**\n\nTestimonials and case studies close the deal before you ever speak.",
       "graphic": {
-        "type": "testimonial",
+        "type": "shot",
         "props": {
-          "chip": "Social proof",
-          "quote": "We doubled our leads in 60 days. Customers finally get what we do.",
-          "author": "Sarah K.",
-          "role": "Owner, Bloom Studio",
-          "stat": "+212%",
-          "statLabel": "more inbound leads"
+          "kind": "testimonials",
+          "rotate": -1,
+          "items": [
+            {
+              "stars": 5,
+              "quote": "Our inquiries doubled within 60 days of the rebrand.",
+              "name": "Sarah Kim",
+              "role": "Owner, Bloom Studio",
+              "photo": true,
+              "result": "+104% inquiries"
+            },
+            {
+              "stars": 5,
+              "quote": "We finally look like the business we actually are.",
+              "name": "Dan Ortiz",
+              "role": "Founder, Ortiz Roofing",
+              "photo": true,
+              "result": "3x booked calls"
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "result-0",
+              "pad": 6
+            },
+            {
+              "type": "circle",
+              "target": "result-1",
+              "pad": 6
+            },
+            {
+              "type": "note",
+              "text": "THIS closes deals.",
+              "x": 470,
+              "y": -60,
+              "rotate": 4,
+              "size": 44
+            }
+          ]
         }
       }
     },
     {
       "text": "Most businesses fail at least 3 of these.\n\nHow many are you failing? Save this and audit your brand this week.",
       "graphic": {
-        "type": "checklist",
+        "type": "shot",
         "props": {
-          "chip": "Your audit",
-          "items": ["Branding", "Website", "Company social", "Founder profile", "Real photos", "Clear message", "Proof"],
-          "footer": "Your score: ___ / 7"
+          "kind": "notes",
+          "rotate": 1.2,
+          "width": 700,
+          "title": "Brand audit",
+          "items": [
+            "Logo, fonts & colors match",
+            "Website looks current",
+            "Posted in the last 2 weeks",
+            "Founder is active online",
+            "Real photos, no stock",
+            "One-sentence message",
+            "Testimonials with names"
+          ],
+          "footer": "Score: ___ / 7",
+          "ink": [
+            {
+              "type": "underline",
+              "target": "footer",
+              "pad": 0
+            },
+            {
+              "type": "note",
+              "text": "be honest.",
+              "near": "footer",
+              "side": "right",
+              "dx": 30,
+              "dy": -6,
+              "rotate": -6,
+              "size": 48
+            }
+          ]
         }
       }
     }
