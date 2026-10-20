@@ -25,12 +25,18 @@ Every slide picks a component from `src/graphics/index.mjs` and passes `props`:
 | `scorecard` | hook: pass/fail checklist with a big score |
 | `brand-mismatch` | the same brand shown inconsistently |
 | `browser-compare` | old site vs new site |
-| `social-profile` | inactive Instagram profile |
+| `social-profile` | inactive Instagram profile (`empty: true` for a "No posts yet" account) |
 | `founder-profile` | dead founder account + trust meter |
 | `stock-vs-real` | stock photo vs real photo |
 | `message-bubbles` | jargon answer vs clear answer |
 | `testimonial` | review card + case-study stat |
 | `checklist` | CTA: empty boxes for the reader to score themselves |
+| `flag-scan` | hook: stopwatch + list of red flags |
+| `team-page` | "Meet the team" page with stock photos / empty slots |
+| `audio-compare` | phone video + good audio vs pro video + bad audio |
+| `anon-testimonials` | nameless reviews vs one real, attributed review |
+| `headline-compare` | vague homepage headline vs a specific one |
+| `score-gauge` | closer: brand-score gauge with a quiz button |
 
 Add new components to the same file and register them in the `graphics` export.
 

@@ -1,0 +1,107 @@
+{
+  "title": "The brand red flags I spot in 10 seconds",
+  "caption": "🚩 I can spot these in 10 seconds. So can your clients.\n\nHow many did you count on your own brand? Be honest 👇\n\nTake the quiz and get your brand score (link in bio).\n\n#branding #smallbusiness #marketing #founder #creativeminds",
+  "slides": [
+    {
+      "text": "The brand red flags I spot in 10 seconds.\n\nSo do your clients.",
+      "graphic": {
+        "type": "flag-scan",
+        "props": {
+          "chip": "10-second brand scan",
+          "time": "0:10",
+          "timeLabel": "to judge your brand",
+          "flags": ["Mismatched logo", "Stale posts", "Stock team", "Ghost founder", "Bad audio", "Fake reviews", "No niche"]
+        }
+      }
+    },
+    {
+      "text": "**1. The logo looks different on every platform.**",
+      "graphic": {
+        "type": "brand-mismatch",
+        "props": {
+          "chip": "Same company?",
+          "company": "Northside Co.",
+          "variants": [
+            { "where": "Instagram", "font": "'InterLocal', sans-serif", "weight": 800, "tracking": "-1px", "color": "#ffffff", "bg": "#e1306c", "swatches": ["#e1306c", "#ffffff", "#fcaf45"] },
+            { "where": "LinkedIn", "font": "'Liberation Serif', serif", "weight": 700, "color": "#0a3d62", "bg": "#e8eef5", "company": "NORTHSIDE COMPANY", "swatches": ["#0a3d62", "#8fa9c4", "#c0a062"] },
+            { "where": "Website", "font": "'JetBrains Mono', monospace", "weight": 500, "style": "italic", "color": "#f5f5f5", "bg": "#222222", "company": "northside", "swatches": ["#222222", "#f5f5f5", "#39d353"] }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**2. The last post was from months ago.**",
+      "graphic": {
+        "type": "social-profile",
+        "props": { "chip": "Company Instagram", "username": "northside.co", "lastPost": "Last post: 4 months ago", "linkTag": "Bio: \"Coming soon!\"" }
+      }
+    },
+    {
+      "text": "**3. The team page is stock photos or nobody at all.**",
+      "graphic": {
+        "type": "team-page",
+        "props": {
+          "chip": "About page",
+          "url": "northside.co/about",
+          "members": [
+            { "kind": "stock", "emoji": "👨‍💼", "name": "John Smith", "role": "CEO" },
+            { "kind": "stock", "emoji": "👩‍💼", "name": "Jane Doe", "role": "Marketing" },
+            { "kind": "empty", "name": "Coming soon", "role": "Sales" },
+            { "kind": "empty", "name": "Coming soon", "role": "Support" }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**4. The founder has 200 followers and no posts.**",
+      "graphic": {
+        "type": "social-profile",
+        "props": { "chip": "Founder's account", "username": "mike.northside", "initial": "M", "posts": "0", "followers": "200", "following": "1,893", "lastPost": "Never posted", "linkTag": "", "empty": true }
+      }
+    },
+    {
+      "text": "**5. Bad audio in the videos.**\n\nPeople forgive bad video. They don't forgive bad audio.",
+      "graphic": {
+        "type": "audio-compare",
+        "props": { "chip": "Video check" }
+      }
+    },
+    {
+      "text": "**6. Testimonials with no names, no faces, no proof.**",
+      "graphic": {
+        "type": "anon-testimonials",
+        "props": {
+          "chip": "Testimonials",
+          "bad": [
+            { "quote": "Great service! Highly recommend!!", "author": "— Anonymous" },
+            { "quote": "Amazing team, would use again.", "author": "— J." }
+          ],
+          "good": {
+            "quote": "Our inquiries doubled in 60 days after the rebrand.",
+            "author": "Sarah Kim",
+            "role": "Owner, Bloom Studio",
+            "result": "+104% inquiries"
+          }
+        }
+      }
+    },
+    {
+      "text": "**7. You can't tell who they serve.**\n\n\"We help businesses grow\" is not a niche.",
+      "graphic": {
+        "type": "headline-compare",
+        "props": {
+          "chip": "Homepage headline",
+          "bad": { "headline": "We help businesses grow.", "reaction": "Which ones?" },
+          "good": { "headline": "Brand + content for independent gyms.", "reaction": "That's me." }
+        }
+      }
+    },
+    {
+      "text": "How many did you count?\n\nTake the quiz and get your brand score.",
+      "graphic": {
+        "type": "score-gauge",
+        "props": { "chip": "Brand score", "value": "?", "label": "/ 100", "button": "Take the quiz →", "sub": "Link in bio · 2 minutes" }
+      }
+    }
+  ]
+}
