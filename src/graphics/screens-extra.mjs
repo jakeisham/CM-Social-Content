@@ -2,6 +2,10 @@
 // metrics dashboard, iMessage chat, booking page. Same rules as screens.mjs:
 // every annotatable part carries data-k="name".
 
+import path from "node:path";
+import { fileURLToPath, pathToFileURL } from "node:url";
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const k = (name) => `data-k="${name}"`;
 
@@ -12,7 +16,7 @@ const k = (name) => `data-k="${name}"`;
 function camera({
   lighting = "soft", background = "deep", framing = "thirds", grid = false, aeLock = false,
   exposurePulse = false, meter = null, reels = false, reelsCaption = "", recording = true, time = "00:00:12",
-  reelsUser = "northside.co",
+  reelsUser = "northside.co", photo = null, photoPosition = "center", spots = {},
 }) {
   const W = 400, H = 711;
   const cx = framing === "center" ? 200 : 150;
@@ -83,7 +87,15 @@ function camera({
       ${reelsCaption ? `<div class="cam-rcap" ${k("reels-caption")}>${esc(reelsCaption)}</div>` : ""}`
     : "";
 
-  return `<div class="cam-screen" ${k("screen")}>${scene}
+  // A real photo replaces the illustrated scene. `spots` names regions of it for the ink layer:
+  //   { "eyes": [x%, y%, w%, h%], "light": [...] }
+  const photoHtml = photo
+    ? `<img class="cam-photo" src="${pathToFileURL(path.join(ROOT, photo)).href}" style="object-position:${photoPosition}">
+       ${grid ? `<div class="cam-grid" ${k("grid")}></div>` : ""}
+       ${Object.entries(spots).map(([name, [x, y, w, h]]) => `<div class="cam-spot" ${k(name)} style="left:${x}%;top:${y}%;width:${w}%;height:${h}%"></div>`).join("")}`
+    : scene;
+
+  return `<div class="cam-screen" ${k("screen")}>${photoHtml}
       <div class="cam-top"><span>⚡</span><span class="cam-rec ${recording ? "on" : ""}" ${k("timer")}>${recording ? "● " : ""}${esc(time)}</span><span>HD · 30</span></div>
       ${aeLock ? `<div class="cam-ae" ${k("aelock")}>AE/AF LOCK</div>` : ""}
       ${exposurePulse ? `<div class="cam-exp" ${k("exposure")}><i></i><span>☀</span></div>` : ""}
