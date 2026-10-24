@@ -29,7 +29,7 @@ Setup once: `npm install`.
 
 Every slide uses `"type": "shot"`: a light-mode screenshot mock-up that gets red-marker
 annotations drawn on it (`src/graphics/screens.mjs` + `src/ink.js`). Screenshots auto-scale
-to fill the space under the copy.
+to fill the space under the copy (override with `"zoom"`).
 
 ```json
 { "type": "shot", "props": {
@@ -56,8 +56,13 @@ to fill the space under the copy.
 | `video` | player, caption, volume, title |
 | `notes` | title, item-N, footer |
 | `quiz` | headline, button |
+| `camera` | screen, light, window, face, eyes, bokeh, grid, aelock, exposure, meter, safe, reels-caption, like (props: lighting, background, framing, grid, aeLock, meter, reels) |
+| `inbox` | count, row-N, from-N, subject-N |
+| `dashboard` | metric-N, value-N, chart |
+| `chat` | msg-N |
+| `booking` | title, slot-N |
 
-**Ink marks:** `circle`, `underline`, `strike`, `check`, `cross` (each takes `target`, optional
+**Ink marks:** `circle`, `underline`, `strike`, `check`, `cross`, `box` (dashed; each takes `target`, optional
 `pad`, `label`), and `note` (handwritten text placed with `near` + `side` + `dx`/`dy`, or
 absolute `x`/`y`; `arrowTo` draws an arrow to a target).
 

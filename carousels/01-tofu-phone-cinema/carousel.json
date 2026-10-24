@@ -1,0 +1,342 @@
+{
+  "title": "Your phone shoots cinema (TOFU)",
+  "caption": "Your phone shoots cinema. You're just not using it. 🎬\n\n7 fixes that make your content look expensive. No new gear required (ok, maybe a $20 mic).\n\nSave this for your next shoot.\n\n#contentcreation #videotips #iphonevideo #personalbrand #creativeminds",
+  "slides": [
+    {
+      "text": "Your phone shoots cinema. You're just not using it.\n\n7 fixes that make your content look expensive.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": -2,
+          "lighting": "overhead",
+          "background": "wall",
+          "framing": "center",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "light",
+              "pad": 4,
+              "label": "?",
+              "labelSize": 56
+            },
+            {
+              "type": "circle",
+              "target": "eyes",
+              "pad": 18,
+              "label": "?",
+              "labelSize": 56
+            },
+            {
+              "type": "note",
+              "text": "this costs\nyou views.",
+              "x": 440,
+              "y": 300,
+              "rotate": -5,
+              "size": 57
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**1. Kill the overheads.**\n\nTurn off ceiling lights. They flatten your face and make every video look like a Zoom call.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": 1.5,
+          "lighting": "overhead",
+          "background": "wall",
+          "framing": "thirds",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "light",
+              "pad": 6
+            },
+            {
+              "type": "note",
+              "text": "turn these\nOFF.",
+              "x": 440,
+              "y": 40,
+              "rotate": -5,
+              "size": 60,
+              "arrowTo": "light"
+            },
+            {
+              "type": "note",
+              "text": "raccoon\neyes",
+              "x": -300,
+              "y": 230,
+              "rotate": 4,
+              "size": 55,
+              "arrowTo": "eyes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**2. Light from the side, not the front.**\n\nSit 45 degrees to a window. Shadow on one side of your face equals depth.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": -1.5,
+          "lighting": "side",
+          "background": "deep",
+          "framing": "thirds",
+          "ink": [
+            {
+              "type": "note",
+              "text": "window\n@ 45°",
+              "x": -300,
+              "y": 120,
+              "rotate": -4,
+              "size": 57,
+              "arrowTo": "window"
+            },
+            {
+              "type": "note",
+              "text": "shadow\n= depth",
+              "x": 440,
+              "y": 240,
+              "rotate": 4,
+              "size": 57,
+              "arrowTo": "face"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**3. Pull away from the wall.**\n\nPut 6+ feet between you and the background. Instant separation, instant production value.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": 1.5,
+          "lighting": "side",
+          "background": "deep",
+          "framing": "thirds",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "bokeh",
+              "pad": -30
+            },
+            {
+              "type": "note",
+              "text": "6+ feet\nback here",
+              "x": 440,
+              "y": 120,
+              "rotate": -5,
+              "size": 60,
+              "arrowTo": "bokeh"
+            },
+            {
+              "type": "note",
+              "text": "soft blur\n= $$$",
+              "x": -300,
+              "y": 420,
+              "rotate": 4,
+              "size": 55
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**4. Lock your exposure.**\n\nTap and hold. Stop your phone from pulsing brighter and darker mid-sentence.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": -1.5,
+          "lighting": "soft",
+          "background": "deep",
+          "framing": "thirds",
+          "aeLock": true,
+          "exposurePulse": true,
+          "ink": [
+            {
+              "type": "circle",
+              "target": "aelock",
+              "pad": 8
+            },
+            {
+              "type": "note",
+              "text": "tap + hold\nuntil you\nsee this",
+              "x": 440,
+              "y": 40,
+              "rotate": -5,
+              "size": 55,
+              "arrowTo": "aelock"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**5. Frame off-center.**\n\nEyes on the top third, a little space in the direction you're facing. Dead center reads amateur.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": 1.5,
+          "lighting": "side",
+          "background": "deep",
+          "framing": "thirds",
+          "grid": true,
+          "ink": [
+            {
+              "type": "circle",
+              "target": "eyes",
+              "pad": 14
+            },
+            {
+              "type": "note",
+              "text": "eyes on\nthis line",
+              "x": 440,
+              "y": 150,
+              "rotate": -5,
+              "size": 57,
+              "arrowTo": "eyes"
+            },
+            {
+              "type": "note",
+              "text": "room to\nbreathe →",
+              "x": 440,
+              "y": 420,
+              "rotate": 3,
+              "size": 52
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**6. Audio is half the picture.**\n\nA $20 lav mic beats a $2,000 camera with bad sound. People forgive ugly video. They scroll past bad audio.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": -1.5,
+          "lighting": "side",
+          "background": "deep",
+          "framing": "thirds",
+          "meter": "clipping",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "meter",
+              "pad": 6
+            },
+            {
+              "type": "note",
+              "text": "clipping =\ninstant\nscroll",
+              "x": -300,
+              "y": 120,
+              "rotate": 4,
+              "size": 55,
+              "arrowTo": "meter"
+            },
+            {
+              "type": "note",
+              "text": "$20 lav\nfixes it.",
+              "x": 440,
+              "y": 330,
+              "rotate": -5,
+              "size": 57
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**7. Respect the UI.**\n\nKeep text and faces out of the bottom and right edges. If the like button covers your caption, the platform wins.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "camera",
+          "width": 400,
+          "rotate": 1.5,
+          "lighting": "side",
+          "background": "deep",
+          "framing": "thirds",
+          "reels": true,
+          "reelsCaption": "3 LIGHTING TIPS YOU NEED",
+          "ink": [
+            {
+              "type": "box",
+              "target": "safe",
+              "pad": 0
+            },
+            {
+              "type": "cross",
+              "target": "reels-caption",
+              "pad": 4
+            },
+            {
+              "type": "note",
+              "text": "safe zone",
+              "x": -300,
+              "y": 150,
+              "rotate": -4,
+              "size": 57,
+              "arrowTo": "safe"
+            },
+            {
+              "type": "note",
+              "text": "buried.",
+              "x": 440,
+              "y": 470,
+              "rotate": 4,
+              "size": 57,
+              "arrowTo": "reels-caption"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "Save this for your next shoot.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "notes",
+          "rotate": -1.2,
+          "width": 720,
+          "title": "Shoot checklist",
+          "items": [
+            "Overheads off",
+            "Window at 45°",
+            "6+ feet from the wall",
+            "Exposure locked",
+            "Eyes on the top third",
+            "Lav mic on",
+            "Text inside the safe zone"
+          ],
+          "ink": [
+            {
+              "type": "note",
+              "text": "screenshot\nthis.",
+              "x": 470,
+              "y": 150,
+              "rotate": -6,
+              "size": 56
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

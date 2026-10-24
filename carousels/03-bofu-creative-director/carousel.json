@@ -1,0 +1,413 @@
+{
+  "title": "5 signs you need a creative director (BOFU)",
+  "caption": "You don't need another agency. You need someone steering. 🎬\n\n5 signs it's time for a creative director.\n\nWe take fragmented brands and make them look like the obvious choice. Strategy and production, end to end.\n\nBook a brand audit. Link in bio.\n\n#creativedirection #branding #founder #contentstrategy #creativeminds",
+  "slides": [
+    {
+      "text": "You don't need another agency.\n\n5 signs you need a creative director.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "inbox",
+          "rotate": -1.2,
+          "width": 740,
+          "count": "27",
+          "rows": [
+            {
+              "from": "Dev (website)",
+              "subject": "Homepage v7",
+              "preview": "need your sign-off before we push",
+              "time": "9:42 AM",
+              "unread": true,
+              "tag": "Waiting on you"
+            },
+            {
+              "from": "Social team",
+              "subject": "Next week's posts",
+              "preview": "please approve all 12 by EOD",
+              "time": "9:15 AM",
+              "unread": true,
+              "tag": "Waiting on you"
+            },
+            {
+              "from": "Video freelancer",
+              "subject": "Edit #3",
+              "preview": "which logo should I use?",
+              "time": "8:58 AM",
+              "unread": true
+            },
+            {
+              "from": "Ads agency",
+              "subject": "New creative direction?",
+              "preview": "we went a different way this time",
+              "time": "Yesterday",
+              "unread": true
+            },
+            {
+              "from": "Photographer",
+              "subject": "Shoot moodboard",
+              "preview": "what's the brand vibe again?",
+              "time": "Yesterday",
+              "unread": false
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "count",
+              "pad": 8,
+              "label": "?",
+              "labelSize": 52
+            },
+            {
+              "type": "underline",
+              "target": "subject-2",
+              "pad": 0
+            },
+            {
+              "type": "note",
+              "text": "sound familiar?",
+              "x": 380,
+              "y": -76,
+              "rotate": 4,
+              "size": 48
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**1. You have 3+ vendors and nobody owns the result.**\n\nWeb guy, social team, video freelancer. Everyone's busy. Nobody's steering.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "inbox",
+          "rotate": 1.2,
+          "width": 740,
+          "count": "27",
+          "rows": [
+            {
+              "from": "Dev (website)",
+              "subject": "Homepage v7",
+              "preview": "need your sign-off before we push",
+              "time": "9:42 AM",
+              "unread": true
+            },
+            {
+              "from": "Social team",
+              "subject": "Next week's posts",
+              "preview": "please approve all 12 by EOD",
+              "time": "9:15 AM",
+              "unread": true
+            },
+            {
+              "from": "Video freelancer",
+              "subject": "Edit #3",
+              "preview": "which logo should I use?",
+              "time": "8:58 AM",
+              "unread": true
+            },
+            {
+              "from": "Ads agency",
+              "subject": "New creative direction?",
+              "preview": "we went a different way this time",
+              "time": "Yesterday",
+              "unread": true
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "from-0",
+              "pad": 2
+            },
+            {
+              "type": "circle",
+              "target": "from-1",
+              "pad": 2
+            },
+            {
+              "type": "circle",
+              "target": "from-2",
+              "pad": 2
+            },
+            {
+              "type": "circle",
+              "target": "from-3",
+              "pad": 2
+            },
+            {
+              "type": "note",
+              "text": "...so who's\nsteering?",
+              "x": 560,
+              "y": -88,
+              "rotate": 4,
+              "size": 46
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**2. Your touchpoints look like different companies.**\n\nYour site says premium. Your Instagram says side hustle.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "logos",
+          "rotate": -1,
+          "items": [
+            {
+              "where": "Website",
+              "text": "NORTHSIDE",
+              "font": "'Serif', serif",
+              "weight": 400,
+              "tracking": "4px",
+              "color": "#f4efe6",
+              "bg": "#151515"
+            },
+            {
+              "where": "Instagram",
+              "text": "Northside!! ✨",
+              "font": "'Hand', cursive",
+              "weight": 700,
+              "color": "#ff4fa3",
+              "bg": "#fff36b",
+              "round": true
+            },
+            {
+              "where": "Proposal deck",
+              "text": "Northside Co.",
+              "font": "'Liberation Sans', sans-serif",
+              "weight": 400,
+              "color": "#1f4fd1",
+              "bg": "#ffffff"
+            }
+          ],
+          "ink": [
+            {
+              "type": "check",
+              "target": "logo-0",
+              "pad": -40
+            },
+            {
+              "type": "circle",
+              "target": "logo-1",
+              "pad": -16
+            },
+            {
+              "type": "circle",
+              "target": "logo-2",
+              "pad": -16
+            },
+            {
+              "type": "note",
+              "text": "premium?\nor side hustle?",
+              "x": 480,
+              "y": -96,
+              "rotate": 4,
+              "size": 44
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**3. You're the bottleneck.**\n\nEvery post, every edit, every caption waits on your approval. You became the creative department by accident.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "inbox",
+          "rotate": 1.2,
+          "width": 740,
+          "title": "Waiting on you",
+          "count": "23",
+          "rows": [
+            {
+              "from": "Social team",
+              "subject": "Approve: Tuesday carousel",
+              "preview": "",
+              "time": "10:02 AM",
+              "unread": true
+            },
+            {
+              "from": "Video freelancer",
+              "subject": "Approve: Reel cut v4",
+              "preview": "",
+              "time": "9:48 AM",
+              "unread": true
+            },
+            {
+              "from": "Social team",
+              "subject": "Approve: caption options",
+              "preview": "",
+              "time": "9:31 AM",
+              "unread": true
+            },
+            {
+              "from": "Dev (website)",
+              "subject": "Approve: new About page",
+              "preview": "",
+              "time": "9:12 AM",
+              "unread": true
+            },
+            {
+              "from": "Ads agency",
+              "subject": "Approve: 6 ad variations",
+              "preview": "",
+              "time": "8:40 AM",
+              "unread": true
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "count",
+              "pad": 8
+            },
+            {
+              "type": "note",
+              "text": "you = the creative\ndepartment now.",
+              "x": 380,
+              "y": -96,
+              "rotate": 3,
+              "size": 44,
+              "arrowTo": "count"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**4. Content gets made. Deals don't move.**\n\nVolume isn't strategy. Posting more of the wrong thing is just louder noise.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "dashboard",
+          "rotate": -1,
+          "width": 860,
+          "metrics": [
+            {
+              "label": "Posts published",
+              "value": "64",
+              "delta": "▲ 210% vs last month",
+              "trend": "up"
+            },
+            {
+              "label": "Qualified leads",
+              "value": "0",
+              "delta": "— no change",
+              "trend": "flat"
+            }
+          ],
+          "bars": [
+            4,
+            6,
+            9,
+            12,
+            14,
+            16,
+            18,
+            22
+          ],
+          "barsLabel": "Posts per week",
+          "ink": [
+            {
+              "type": "circle",
+              "target": "value-1",
+              "pad": 14
+            },
+            {
+              "type": "note",
+              "text": "louder noise.",
+              "x": 470,
+              "y": -70,
+              "rotate": 4,
+              "size": 50,
+              "arrowTo": "value-1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "text": "**5. Prospects still ask \"so what exactly do you do?\"**\n\nIf they need a meeting to understand you, your brand isn't doing its job.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "chat",
+          "rotate": 1.2,
+          "width": 640,
+          "contact": "Sarah (prospect)",
+          "sub": "iMessage",
+          "messages": [
+            {
+              "from": "them",
+              "text": "Hey! Been following your stuff for a while 🙌"
+            },
+            {
+              "from": "them",
+              "text": "So... what exactly do you guys do?"
+            },
+            {
+              "from": "me",
+              "text": "Haha great question, can we hop on a call?"
+            }
+          ],
+          "ink": [
+            {
+              "type": "circle",
+              "target": "msg-1",
+              "pad": 6
+            },
+            {
+              "type": "note",
+              "text": "your brand should've answered this.",
+              "x": -10,
+              "y": 500,
+              "rotate": -2,
+              "size": 46
+            }
+          ],
+          "zoom": 0.85
+        }
+      }
+    },
+    {
+      "text": "We take fragmented brands and make them look like the obvious choice. Strategy and production, end to end.\n\nBook a brand audit. Link in bio.",
+      "graphic": {
+        "type": "shot",
+        "props": {
+          "kind": "booking",
+          "rotate": -1,
+          "width": 860,
+          "host": "Creative Minds",
+          "title": "Brand Audit",
+          "duration": "30 min",
+          "desc": "We review your website, socials and content, then show you exactly what's costing you clients.",
+          "day": "Thursday",
+          "slots": [
+            "10:00 AM",
+            "11:30 AM",
+            "2:00 PM",
+            "4:30 PM"
+          ],
+          "selected": 2,
+          "ink": [
+            {
+              "type": "circle",
+              "target": "slot-2",
+              "pad": 8
+            },
+            {
+              "type": "note",
+              "text": "link in bio.",
+              "x": 36,
+              "y": 300,
+              "rotate": -4,
+              "size": 42
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

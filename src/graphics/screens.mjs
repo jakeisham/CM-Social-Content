@@ -3,6 +3,8 @@
 //   { "type": "shot", "props": { "kind": "ig", ...kindProps, "rotate": -1.5,
 //       "ink": [ {"type":"circle","target":"followers","label":"?"}, {"type":"note","text":"hmm","near":"followers","side":"right","arrowTo":"followers"} ] } }
 
+import { extraKinds, extraAppKinds } from "./screens-extra.mjs";
+
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const k = (name) => `data-k="${name}"`;
 
@@ -150,15 +152,16 @@ const kinds = {
   },
 };
 
-const APP_KINDS = new Set(["ig", "linkedin", "notes", "video", "logos", "google"]);
+Object.assign(kinds, extraKinds);
+const APP_KINDS = new Set(["ig", "linkedin", "notes", "video", "logos", "google", ...extraAppKinds]);
 
 export function shot(props) {
-  const { kind, rotate = 0, width = 820, height, ink = [] } = props;
+  const { kind, rotate = 0, width = 820, height, zoom, ink = [] } = props;
   const fn = kinds[kind];
   if (!fn) throw new Error(`Unknown shot kind "${kind}". Available: ${Object.keys(kinds).join(", ")}`);
   return `<div class="shot-stage"><div class="shot-wrap" style="width:${width}px">
     <div class="shot shot-${kind} ${APP_KINDS.has(kind) ? "shot-app" : "shot-browser"}"${height ? ` style="height:${height}px"` : ""}>${fn(props)}</div>
-    <script type="application/json" class="ink-spec">${JSON.stringify({ rotate, marks: ink }).replace(/</g, "\\u003c")}</script>
+    <script type="application/json" class="ink-spec">${JSON.stringify({ rotate, zoom, marks: ink }).replace(/</g, "\\u003c")}</script>
   </div></div>`;
 }
 

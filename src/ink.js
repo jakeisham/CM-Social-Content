@@ -53,6 +53,13 @@
     return { svg: stroke(`M${x},${y} L${x + 14},${y + 18} L${x + 44},${y - 26}`, 7), box: { x, y: y - 26, w: 44, h: 44 } };
   }
 
+  function box(b, pad, seed) {
+    const r = rng(seed), j = () => (r() - 0.5) * 6;
+    const x1 = b.x - pad, y1 = b.y - pad, x2 = b.x + b.w + pad, y2 = b.y + b.h + pad;
+    const d = `M${x1 + j()},${y1 + j()} L${x2 + j()},${y1 + j()} L${x2 + j()},${y2 + j()} L${x1 + j()},${y2 + j()} Z`;
+    return { svg: stroke(d, 5).replace("/>", ' stroke-dasharray="16 12"/>'), box: { x: x1, y: y1, w: x2 - x1, h: y2 - y1 } };
+  }
+
   function cross(b, pad) {
     const x1 = b.x - pad, y1 = b.y - pad, x2 = b.x + b.w + pad, y2 = b.y + b.h + pad;
     return { svg: stroke(`M${x1},${y1} L${x2},${y2} M${x2},${y1 + 6} L${x1 + 4},${y2}`, 7), box: { x: x1, y: y1, w: x2 - x1, h: y2 - y1 } };
@@ -104,7 +111,7 @@
 
     spec.marks.forEach((m, i) => {
       if (m.type === "note") return;
-      const fn = { circle, underline, strike, check, cross }[m.type || "circle"];
+      const fn = { circle, underline, strike, check, cross, box }[m.type || "circle"];
       const out = fn(boxOf(m.target), m.pad ?? 8, m.seed ?? i + 3);
       svg += out.svg;
       drawn[m.target] = out.box;
