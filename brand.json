@@ -3,5 +3,10 @@
   "name": "Jake Isham",
   "handle": "jakecreativemarketing",
   "verified": true,
-  "avatar": "assets/headshot.png"
+  "avatar": "assets/headshot.png",
+  "accent": "#e63b3e",
+  "wordmark": [
+    "CREATIVE",
+    "MINDS"
+  ]
 }

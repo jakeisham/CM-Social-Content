@@ -30,7 +30,7 @@ function avatarHtml(brand) {
   return `<img src="${pathToFileURL(path.join(ROOT, brand.avatar)).href}">`;
 }
 
-function slideHtml(brand, slide) {
+function slideHtml(brand, slide, i = 0, total = 1) {
   let graphic = "";
   if (slide.graphic) {
     const fn = graphics[slide.graphic.type];
@@ -40,6 +40,7 @@ function slideHtml(brand, slide) {
   return `<!doctype html><html><head><meta charset="utf-8">
 <link rel="stylesheet" href="${pathToFileURL(path.join(ROOT, "src/styles.css")).href}">
 <script defer src="${pathToFileURL(path.join(ROOT, "src/ink.js")).href}"></script>
+<style>:root { --accent: ${brand.accent || "#d92b1f"}; }</style>
 </head><body><div class="slide">
   <div class="header">
     <div class="avatar">${avatarHtml(brand)}</div>
@@ -50,6 +51,7 @@ function slideHtml(brand, slide) {
   </div>
   <div class="text">${formatText(slide.text)}</div>
   ${graphic}
+  ${brand.wordmark ? `<div class="footer"><div class="wordmark">${escape(brand.wordmark[0])}<span>${escape(brand.wordmark[1] || "")}</span></div>${i === 0 && total > 1 ? `<div class="swipe">SWIPE →</div>` : ""}</div>` : ""}
 </div></body></html>`;
 }
 
@@ -63,7 +65,7 @@ async function renderCarousel(browser, dir, brand) {
   for (const [i, slide] of spec.slides.entries()) {
     const n = String(i + 1).padStart(2, "0");
     const htmlFile = path.join(outDir, `.slide-${n}.html`);
-    fs.writeFileSync(htmlFile, slideHtml(brand, slide));
+    fs.writeFileSync(htmlFile, slideHtml(brand, slide, i, spec.slides.length));
     await page.goto(pathToFileURL(htmlFile).href);
     await page.evaluate(() => document.fonts.ready);
     await page.waitForFunction(() => window.__inkDone === true);

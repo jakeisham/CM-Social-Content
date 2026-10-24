@@ -4,7 +4,7 @@
 // type: circle | underline | strike | check | cross | note. `target`/`near`/`arrowTo` name a [data-k] element.
 (async () => {
   await document.fonts.ready;
-  const RED = "#d92b1f";
+  const RED = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#d92b1f";
   const NS = "http://www.w3.org/2000/svg";
 
   const rng = (seed) => {
@@ -83,7 +83,7 @@
     const spec = JSON.parse(wrap.querySelector(".ink-spec").textContent);
     // Scale the screenshot to fill the space left on the slide (never past 1.2x).
     const pre = wrap.getBoundingClientRect();
-    const availW = 924, availH = window.innerHeight - 90 - pre.top;
+    const availW = 924, availH = window.innerHeight - 110 - pre.top;
     const z = spec.zoom ?? Math.min(1.2, availW / pre.width, availH / pre.height);
     wrap.style.zoom = z;
     // Short screenshots sit a little lower so the slide doesn't feel top-heavy.

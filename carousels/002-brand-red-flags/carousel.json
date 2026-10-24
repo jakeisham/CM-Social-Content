@@ -1,9 +1,9 @@
 {
-  "title": "The brand red flags I spot in 10 seconds",
-  "caption": "🚩 I can spot these in 10 seconds. So can your clients.\n\nHow many did you count on your own brand? Be honest 👇\n\nTake the quiz and get your brand score (link in bio).\n\n#branding #smallbusiness #marketing #founder #creativeminds",
+  "title": "7 red flags in your content that are losing you clients",
+  "caption": "🚩 7 red flags in your content that are quietly losing you clients.\n\nI spot them in 10 seconds. So do the people deciding whether to hire you.\n\nHow many did you count on your own brand? Be honest 👇\n\n#branding #contentmarketing #founder #personalbrand #creativeminds",
   "slides": [
     {
-      "text": "The brand red flags I spot in 10 seconds.\n\nSo do your clients.",
+      "text": "7 red flags in your content that are losing you clients.\n\nI spot them in 10 seconds. So do they.",
       "graphic": {
         "type": "shot",
         "props": {
@@ -426,7 +426,7 @@
         "props": {
           "kind": "quiz",
           "rotate": 1,
-          "url": "creativeminds.co/score",
+          "url": "brand-score-quiz",
           "headline": "What's your brand score?",
           "sub": "7 questions · 2 minutes",
           "button": "Get my score",
@@ -438,14 +438,13 @@
             },
             {
               "type": "note",
-              "text": "link in bio",
+              "text": "be honest.",
               "near": "button",
               "side": "right",
               "dx": 40,
               "dy": 20,
               "rotate": -6,
-              "size": 46,
-              "arrowTo": "button"
+              "size": 46
             }
           ]
         }

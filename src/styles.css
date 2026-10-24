@@ -110,7 +110,7 @@ html, body {
 }
 .ink-layer { position: absolute; inset: 0; pointer-events: none; z-index: 5; }
 .ink-svg { position: absolute; left: 0; top: 0; overflow: visible; mix-blend-mode: multiply; }
-.ink-note { position: absolute; font-family: "Marker"; color: #d92b1f; line-height: 1.02; white-space: nowrap; }
+.ink-note { position: absolute; font-family: "Marker"; color: var(--accent, #d92b1f); line-height: 1.02; white-space: nowrap; }
 
 /* browser chrome */
 .sx-bar { height: 50px; background: #f1f3f4; border-bottom: 1px solid #e0e0e0; display: flex; align-items: center; gap: 9px; padding: 0 18px; }
@@ -271,3 +271,11 @@ html, body {
 .qz-opts { display: flex; gap: 10px; margin-top: 14px; }
 .qz-opts div { flex: 1; border: 1.5px solid #d1d5db; border-radius: 10px; padding: 10px; font-size: 18px; text-align: center; }
 .qz-btn { display: inline-block; margin-top: 24px; background: #111; color: #fff; font-size: 23px; font-weight: 700; padding: 16px 32px; border-radius: 12px; }
+
+/* ---------- brand footer ---------- */
+@font-face { font-family: "Condensed"; src: url("../assets/fonts/anton-latin-400-normal.woff2"); }
+.footer { position: absolute; left: 78px; right: 78px; bottom: 46px; display: flex; justify-content: space-between; align-items: center; }
+.wordmark { font-family: "Condensed"; font-size: 30px; letter-spacing: -.3px; color: var(--ink); }
+.wordmark span { color: var(--accent); }
+.swipe { font-family: "Condensed"; font-size: 26px; letter-spacing: 2px; color: var(--muted); }
+.slide { position: relative; }
